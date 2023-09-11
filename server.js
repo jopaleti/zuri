@@ -5,7 +5,7 @@ const app = express();
 app.get("/api", (req, res) => {
 	const { slack_name, track } = req.query;
 	const currentDate = new Date();
-	const utcTime = currentDate.toISOString();
+	const utcTimed = currentDate.toISOString().split(".")[0] + "Z";
 	const daysOfWeek = [
 		"Sunday",
 		"Monday",
@@ -21,7 +21,7 @@ app.get("/api", (req, res) => {
 		res.status(200).json({
 			slack_name: slack_name,
 			current_day: currentDayName,
-			utc_time: utcTime,
+			utc_time: utcTimed,
 			track: track,
 			github_file_url: "https://github.com/jopaleti/zuri/blob/master/server.js",
 			github_repo_url: "https://github.com/jopaleti/zuri.git",
