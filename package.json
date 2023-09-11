@@ -1,0 +1,24 @@
+{
+  "name": "zuri",
+  "version": "1.0.0",
+  "description": "Stage 1 zuri backend internship",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jopaleti/zuri.git"
+  },
+  "author": "flexdev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jopaleti/zuri/issues"
+  },
+  "homepage": "https://github.com/jopaleti/zuri#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
